@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Kamau |Portfolio</title>
+    <link rel="stylesheet" href="portfoliocss.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Ian Kamau</div>
+                </div>
+            </a>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">About Me</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+           
+            <!-- Portfolio Content Section -->
+     <section class="about-section">
+        <h1>About Me</h1>
+        <div class="about-cards">
+    
+            
+            <div class="card">
+    <a href="about.html">
+                <div class="card-icon">
+                    <span class="fa-solid fa-user"></span>
+                </div>
+                <h2>About</h2>
+                <p>Find out more about me, my interests and passions.</p>
+                <a href="about.html">Learn More ></a>
+            </div>
+        </a>
+            
+<a href="experience.html">
+            <div class="card">
+                <div class="card-icon">
+                    <span class="fa-solid fa-briefcase"></span>
+                </div>
+                <h2>Experience</h2>
+                <p>This is where you'll find all of my previous working experience.</p>
+                <a href="experience.html">Learn More ></a>
+            </div>
+</a>
+            <a href="education.html">
+                <div class="card">
+                <div class="card-icon">
+                    <span class="fa-solid fa-graduation-cap"></span>
+                </div>
+                <h2>Education</h2>
+                <p>Find out more about my Educational journey.</p>
+                <a href="education.html">Learn More ></a>
+            </div>
+            </a>
+            <a href="skills.html">
+            <div class="card">
+                <div class="card-icon">
+                    <span class="fa-solid fa-brain"></span>
+                </div>
+                <h2>Skills</h2>
+                <p>Explore my technical skills.</p>
+                <a href="skills.html">Learn More ></a>
+            </div>
+        </div>
+    </a>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/8XiCCfiki7adhfAf/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ian-kamau-976b28246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ian_ngash5_/profilecard/?igsh=MXBzMW1mbmlma2t0ag=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://whatsapp.com/dl/0115668278"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="iankamnganga@gmail.com"><i class="fa-brands fa-gmail"></i></a>
+            </div>
+            <p>&copy; 2025 Ian Kamau. All rights reserved.</p>
+        </footer>
+</html>

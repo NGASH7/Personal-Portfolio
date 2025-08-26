@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Kamau |Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                <a href="index.html">
+                    <div class="logo-text">Ian Kamau</div>
+                </div>
+            </a>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                   <img src="ngash4.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                   <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                   <h1>Ian Kamau</h1>
+                   <p> I specialize in designing and building scalable, high-performance applications that deliver seamless digital experiences.
+            With expertise in both frontend and backend development, I create robust, efficient, and user-friendly solutions that make an impact.
+            I enjoy solving complex problems, optimizing systems, and crafting clean, maintainable code.
+            Feel free to explore my work and connect with me — I'm always open to collaboration  and new opportunities
+                   </p>
+            
+                   <div class="btn-group">
+                      <a href="IAN CV.pdf" download="IAN CV.pdf" class="btn active">Download CV</a>
+                      <a href="contact.html" class="btn">Contact</a>
+                   </div>
+            
+                   <div class="social">
+                       <a href="https://www.facebook.com/share/8XiCCfiki7adhfAf/"><i class="fa-brands fa-facebook"></i></a>
+                       <a href="https://www.linkedin.com/in/ian-kamau-976b28246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.instagram.com/ian_ngash5_/profilecard/?igsh=MXBzMW1mbmlma2t0ag=="><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://wa.me/254115668278" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                       <a href="mailto:iankamnganga@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                       <a href="https://github.com/NGASH7"target="_blank" style="font-size:40px; color:#ffffff;">
+    <i class="fab fa-github"></i>
+</a>
+
+
+                   </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+       var typed = new Typed(".input", {
+  strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+  typeSpeed: 70,
+  backSpeed: 55,
+  loop: true
+});
+
+     </script>
+      <footer class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/8XiCCfiki7adhfAf/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ian-kamau-9265a637b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ian_ngash5_/profilecard/?igsh=MXBzMW1mbmlma2t0ag=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://whatsapp.com/dl/0115668278"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="iankamnganga@gmail.com"><i class="fa-brands fa-gmail"></i></a>
+            </div>
+            <p>&copy; 2025 Ian Kamau. All rights reserved.</p>
+        </footer>
+</body>
+       
+</html>
