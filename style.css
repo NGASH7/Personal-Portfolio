@@ -1,0 +1,568 @@
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: serif, Georgia;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    max-width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#6663ee;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #f8f8f8;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #0e2ddb;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+          font-size: 1.2rem; /* Example: making the font size 20% larger than the default */
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color:#e5e5e5;
+    font-size: 22px;
+}
+.hero-text h5 span{
+    color: #0e0ae2;
+    font-size: 23px;
+}
+.hero-text h1{
+    color: #0e1bd4;
+    font-size: 1.5rem;
+}
+.hero-text p{
+    color:#e5e5e5;
+    font-size: 20px;
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    background-color: #505052; 
+
+}
+.btn-group a.btn:hover {
+    background-color: #1dc5e2; 
+    color: #fff; 
+  }
+  
+  .btn-group a.btn.active:hover {
+    background-color: #1dc5e2; 
+    color: #fff; 
+  }
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
+
+/* Hover effect for nav links */
+nav ul.navlinks li a:hover {
+    color: #0ab5d3;
+    background-color: #222;
+
+}
+
+/* Active link effect (for when the user is on a particular page) */
+nav ul.navlinks li a.active {
+    color: #20ffff; /* Active link color */
+    font-weight: bold; /* Optional: makes the active link bold */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222; /* Dark background for footer */
+    color: #e5e5e5; /* Light text color for readability */
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-icons {
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    color: #e5e5e5;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #007ced; /* Accent color for social icons on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .footer-links a {
+    color: #e5e5e5;
+    margin: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #007ced; /* Accent color for links on hover */
+}
+
+footer .newsletter {
+    margin-top: 20px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #e5e5e5;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #007ced;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .newsletter button:hover {
+    background-color: #0c9ba0; /* Accent color for the button on hover */
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* General Section Styling */
+.contact-section {
+    padding: 30px 20px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #fffefe;
+}
+
+/* Form Group Styling */
+.form-group {
+    width: 100%;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.form-group label {
+    display: flex; 
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Focus & Hover Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button Styling */
+.btn {
+    width: 48%;
+    padding: 12px;
+    margin: 10px 1%;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    background-color: #003d7a;
+}
+
+/* Reset Button Styling */
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+button[type="reset"]:hover {
+    background-color: #999;
+}
+
+/* Success and Error Messages */
+.success-message,
+.error-message {
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.success-message {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.error-message {
+    background-color: #fff;
+    color: #e40303;
+}
+
+/* File Input Styling */
+#attachment {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #cecece;
+    background-color: #cecece;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Section Titles */
+.section-title, h2 {
+    font-size: 22px;
+    color: #b3adad;
+    margin-bottom: 20px;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 40px;
+}
+
+.experience-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(78, 128, 141);
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Blog Section */
+.blogs {
+    margin-bottom: 40px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: rgb(63, 123, 138);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(64, 128, 165, 0.1);
+    width: 45%;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blog-card img {
+ 
+       width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-content a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map-section iframe {
+  width: 100vw;   /* full viewport width */
+  margin-left: calc(-50vw + 50%); /* cancels wrapper centering */
+  height: 200px;  /* adjust height */
+  border: 0;
+  display: block;
+}
+
+.hero-text p {
+    color: #e5e5e5;
+    font-size: 20px;
+    /* Add this line to change the font */
+    font-family: serif, Georgia;
+}

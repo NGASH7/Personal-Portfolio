@@ -1,0 +1,420 @@
+/* Footer Styles */
+footer {
+    background-color: #222; /* Dark background for footer */
+    color: #e5e5e5; /* Light text color for readability */
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-icons {
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    color: #e5e5e5;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #007ced; /* Accent color for social icons on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .footer-links a {
+    color: #e5e5e5;
+    margin: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #007ced; /* Accent color for links on hover */
+}
+
+footer .newsletter {
+    margin-top: 20px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #e5e5e5;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #007ced;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .newsletter button:hover {
+    background-color: #0c9ba0; /* Accent color for the button on hover */
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: serif, Georgia;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    max-width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#6663ee;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #f8f8f8;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #0e2ddb;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+          font-size: 1.2rem; /* Example: making the font size 20% larger than the default */
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    background-color: #505052; 
+
+}
+.btn-group a.btn:hover {
+    background-color: #1dc5e2; 
+    color: #fff; 
+  }
+  
+  .btn-group a.btn.active:hover {
+    background-color: #1dc5e2; 
+    color: #fff; 
+  }
+  /* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
+
+/* Hover effect for nav links */
+nav ul.navlinks li a:hover {
+    color: #0ab5d3;
+    background-color: #222;
+
+}
+
+/* Active link effect (for when the user is on a particular page) */
+nav ul.navlinks li a.active {
+    color: #20ffff; /* Active link color */
+    font-weight: bold; /* Optional: makes the active link bold */
+}
+
+/* Custom Scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b; /* Darker track */
+}
+::-webkit-scrollbar-thumb {
+    background: #4a5568; /* Grey thumb */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* Lighter grey on hover */
+}
+/* Container for content to center and limit width */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+}
+@media (min-width: 768px) {
+    .container {
+        padding-left: 2rem; /* 32px */
+        padding-right: 2rem; /* 32px */
+    }
+}
+/* Main Content Section */
+.main-content {
+    flex-grow: 1; /* flex-grow */
+    padding: 1rem; /* p-4 */
+}
+@media (min-width: 768px) {
+    .main-content {
+        padding: 2rem; /* md:p-8 */
+    }
+---
+/* Basic reset for consistent styling */
+body, h1, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use a font similar to the example */
+    background-color: #222; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222; /* Slightly different shade for the navbar */
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Main About Me Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 4rem; /* Spacing between image and text */
+}
+
+.profile-container img {
+    width: 300px; /* Adjust size as needed */
+    height: 400px;
+
+     /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+.profile-container {
+    /* New styling for the container */
+    position: sticky;
+    top: 2rem; /* How far from the top of the screen the image will stick */
+    align-self: flex-start; /* Aligns the container to the top of the flex container */
+    height: fit-content; /* Ensures the container is only as tall as its content */
+}
+
+
+
+.content-container {
+    max-width: 600px;
+}
+
+.content-container h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    font-family:serif, Georgia;
+color: #c0c0c0;
+}
+
+.content-container h3 {
+    font-size: 1.35rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #8bb3e7; /* A slightly different color for section headings */
+}
+
+.content-container p {
+    line-height: 1.6;
+    font-size:1.1rem;
+    color: #dadedf;
+}
+
+.content-container ul {
+    list-style-type:   /* Removes bullets */
+    padding-left: 0;
+margin-left: 1.5rem;
+}
+
+.content-container li {
+    margin-bottom: 0.5rem;
+}

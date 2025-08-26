@@ -1,0 +1,275 @@
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+/* Portfolio Page CSS */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: serif, Georgia;
+    text-decoration: none;
+}
+
+body {
+    background-color: #222; /* Match your hero-header */
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header (same as your original header) */
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Nav links */
+nav .navlinks {
+    list-style: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+    transition: 0.3s;
+         font-size: 1.2rem; /* Example: making the font size 20% larger than the default */
+
+}
+
+nav .navlinks li a:hover {
+    color: #26d4f3;
+}
+
+nav .navlinks li a.active {
+    color: #7088bd;
+    font-weight: bold;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 0;
+}
+
+/* Section Titles */
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+/* Main Portfolio */
+.main-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 50px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.portfolio-cards h2 {
+  width: 100%;
+  text-align: center;
+  color: #f8f8f8;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: rgb(7, 9, 10);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #1a1b1b;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #111111;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #007ced;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #e5e5e5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: #e5e5e5;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #007ced;
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}
+/* About Section styles */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222; /* Background color from the image */
+    color: #f0f0f0; /* Text color */
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color:#e1e1e6;
+; /* Heading color */
+    font-weight: 500;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #252525;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1f2334;
+    margin-bottom: 20px;
+}
+
+.card-icon .fa-solid {
+    font-size: 2.5em;
+    color: #0a06e0;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #060aca;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #0a9cd6;
+}
+
+/* You might need to adjust your existing hero-header styles to match the new background color */
+.hero-header {
+    background-color: #222;
+}
