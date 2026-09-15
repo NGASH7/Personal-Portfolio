@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ian Kamau - Software Engineer</title>
+    <meta name="description" content="Connect with Ian Kamau directly via Email, WhatsApp, LinkedIn, or GitHub for software engineering projects and opportunities.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Design System Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-avatar">IK</div>
+                <div class="brand-name">Ian<span>.dev</span></div>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta btn btn-sm btn-primary">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="page-header container">
+        <span class="section-tag">Direct Communication Hub</span>
+        <h1>Let's Connect &amp; <span class="gradient-text">Collaborate</span></h1>
+        <p>Whether you're looking to hire a Software Engineer, discuss a project, or connect professionally, feel free to reach out directly through any of the channels below.</p>
+    </section>
+
+    <!-- Contact Content Hub -->
+    <main class="container">
+        <div class="contact-hub-grid">
+            
+            <!-- Left: Direct Communication Cards -->
+            <div class="contact-channels">
+                
+                <!-- Email Card -->
+                <div class="contact-card-direct">
+                    <div>
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon icon-email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>Direct Email</h3>
+                                <p>Primary inbox for work &amp; inquiries</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-value">iankamnganga@gmail.com</div>
+                    </div>
+
+                    <div class="contact-card-actions">
+                        <a href="mailto:iankamnganga@gmail.com" class="btn btn-sm btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Send Email
+                        </a>
+                        <button onclick="copyToClipboard('iankamnganga@gmail.com', 'Email address')" class="btn btn-sm btn-secondary" title="Copy email address to clipboard">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Card -->
+                <div class="contact-card-direct">
+                    <div>
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon icon-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>WhatsApp &amp; Phone</h3>
+                                <p>Instant messaging &amp; fast responses</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-value">+254 725 153 900</div>
+                    </div>
+
+                    <div class="contact-card-actions">
+                        <a href="https://wa.me/254725153900" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-cyan">
+                            <i class="fa-brands fa-whatsapp"></i> Open Chat
+                        </a>
+                        <button onclick="copyToClipboard('+254725153900', 'Phone number')" class="btn btn-sm btn-secondary" title="Copy phone number">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="contact-card-direct">
+                    <div>
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon icon-linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>LinkedIn Network</h3>
+                                <p>Professional profile &amp; updates</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-value">linkedin.com/in/ian-kamau-976b28246</div>
+                    </div>
+
+                    <div class="contact-card-actions">
+                        <a href="https://www.linkedin.com/in/ian-kamau-976b28246" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                            <i class="fa-brands fa-linkedin-in"></i> View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="contact-card-direct">
+                    <div>
+                        <div class="contact-card-header">
+                            <div class="contact-card-icon icon-github">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="contact-card-info">
+                                <h3>GitHub Profile</h3>
+                                <p>Open source repositories &amp; code</p>
+                            </div>
+                        </div>
+                        <div class="contact-card-value">github.com/NGASH7</div>
+                    </div>
+
+                    <div class="contact-card-actions">
+                        <a href="https://github.com/NGASH7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                            <i class="fa-brands fa-github"></i> Explore Code
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right: Quick Email Starters & Availability Card -->
+            <div class="inquiry-box">
+                
+                <!-- Availability Status Banner -->
+                <div class="availability-card">
+                    <div class="availability-header">
+                        <span class="status-pill">
+                            <span class="status-dot"></span> Available Now
+                        </span>
+                        <span class="badge badge-cyan">Nairobi, Kenya (GMT+3)</span>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Looking for a skilled developer?</h3>
+                        <p style="font-size: 0.95rem;">I am available for full-time software engineering roles, contract projects, and web architecture consulting.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Action Pre-filled Starters -->
+                <div class="glass-card" style="padding: 26px;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 8px;">
+                        <i class="fa-solid fa-bolt" style="color: var(--accent-secondary);"></i> Quick Email Starters
+                    </h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 18px;">Click any option below to open your email client with pre-configured details:</p>
+
+                    <div class="inquiry-templates-list">
+                        <!-- Option 0: AI Chatbot / Automation -->
+                        <a href="mailto:iankamnganga@gmail.com?subject=AI%20Chatbot%20%26%20Automation%20Inquiry&body=Hi%20Ian%2C%0A%0AWe%20are%20looking%20to%20build%20a%20chatbot%20system%20%2F%20AI%20automation%20workflow%20for%20our%20business%20and%20would%20like%20to%20consult%20with%20you.%0A%0ABest%20regards%2C" class="template-btn">
+                            <div>
+                                <strong style="display:block; color:#fff;"><i class="fa-solid fa-robot" style="color: var(--accent-secondary); margin-right: 6px;"></i> Build an AI Chatbot / Automation</strong>
+                                <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: normal;">Custom conversational agents, LLM integrations &amp; automated pipelines</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <!-- Option 1: Hire for Role -->
+                        <a href="mailto:iankamnganga@gmail.com?subject=Job%20Opportunity%20-%20Software%20Engineer&body=Hi%20Ian%2C%0A%0AWe%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20at%20our%20organization.%0A%0ABest%20regards%2C" class="template-btn">
+                            <div>
+                                <strong style="display:block; color:#fff;">Hire for a Role / Team</strong>
+                                <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: normal;">Discuss full-time or contract software engineering roles</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <!-- Option 2: Project Collaboration -->
+                        <a href="mailto:iankamnganga@gmail.com?subject=Project%20Inquiry%20-%20Web%20%26%20Software%20Development&body=Hi%20Ian%2C%0A%0AI%20have%20a%20project%20idea%20regarding%20...%20and%20would%20like%20to%20explore%20working%20together.%0A%0ABest%20regards%2C" class="template-btn">
+                            <div>
+                                <strong style="display:block; color:#fff;">Discuss a Project or Application</strong>
+                                <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: normal;">Custom web platforms, Django backend, MIS development</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <!-- Option 3: General Consultation -->
+                        <a href="mailto:iankamnganga@gmail.com?subject=General%20Inquiry%20%2F%20Networking&body=Hi%20Ian%2C%0A%0AI%20wanted%20to%20connect%20with%20you%20regarding%20...%0A%0ABest%20regards%2C" class="template-btn">
+                            <div>
+                                <strong style="display:block; color:#fff;">General Consultation &amp; Connect</strong>
+                                <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: normal;">Networking, advice, or technical discussions</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Strip Mini -->
+                <div class="glass-card" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                    <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">Connect on Socials</span>
+                    <div class="social-links" style="margin-top: 0;">
+                        <a href="https://github.com/NGASH7" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ian-kamau-976b28246" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/ian_ngash5_" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/8XiCCfiki7adhfAf/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div id="portfolio-toast" class="toast-notification">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Hub</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://github.com/NGASH7" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ian-kamau-976b28246" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/254725153900" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:iankamnganga@gmail.com" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <p class="footer-copy">&copy; 2025 Ian Kamau. 100% Static Web Ready.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
